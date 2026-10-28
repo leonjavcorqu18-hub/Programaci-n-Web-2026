@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen HTML</title>
+    <meta name="author" content="Leonardo Javier Cortés Quesada">
+</head>
+<body>
+    <header>
+        <section>
+            <img src="imagenes/IMG_1473.jpeg" alt="logop3">
+        </section>
+        <section>
+            <h1>Resumen HTML y Contenedores Semánticos</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/">Sobre Nosotros</a></li>
+                <li><a href="/">Acerca de:</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Resumen HTML: Principales conceptos y etiquetas</h2>
+        <p>Esta página va a resumir los principales conceptos y etiquetas vistas en la clase de programación web 1, en el módulo de HTML.</p>
+    </section>
+    <main>
+        <section>
+            <h2>Conceptos principales de HTML</h2>
+            <!-- article es contenido que podemos entender perfectamente si lo sacamos de nuestra página web -->
+            <article>
+            <h3>HTML</h3>
+            <p>El lenguaje de marcado de hipertexto es un lenguaje de marcas que se utiliza para estructuras sitios web.</p>
+            </article>
+            <article>
+            <h3>Elemento HTML</h3>
+            <p>Un elemento HTML es la unidad básica de estructura y contenido en una página web, y está compuesta de:</p>
+            <ol style="background-color: rgb(160, 112, 205);">
+                <li>Etiqueta de apertura</li>
+                <li>Pares atributos-valor</li>
+                <li>Contenido</li>
+                <li>Etiqueta de cierre</li>
+            </ol>
+            </article>
+            <article>
+                <h3>Etiqueta &lt;head&gt;</h3>
+                <p>Es una etiqueta que se utiliza para comunicarse con el navegador a través de los metadatos, permite mejorar el SEO, además se enlazan archivos externos de estilos o scripts.</p>
+            </article>
+            <article>
+                <h3>Etiqueta &lt;body&gt;</h3>
+                <p>Dentro de esta etiqueta va todo el contenido que ve el usuario en nuestra página web.</p>
+            </article>
+            <article>
+                <h3>Contenedores semánticos</h3>
+                <table border="3px">
+                    <tr>
+                        <th style="background-color: rgb(231, 91, 91); color: white;">&lt;header&gt;</th>
+                        <td>Es una etiqueta utilizada para el contenido introductorio de una página web, puede contener el logo, el menú de navegación principal, el nombre de la empresa, etc.</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(169, 61, 61); color: white;">&lt;nav&gt;</th>
+                        <td>Etiqueta utilizada para el menú de la navegación principal, suele contener enlaces a otras páginas relacionadas o navegar por la página principal, no debe haber más de una página.</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(175, 21, 21); color: white;">&lt;main&gt;</th>
+                        <td>Etiqueta unica de una página web cuyo objetivo es resaltar nuestro objetivo o mensaje principal del sitio web, dentro se colocará el contenido principal de nuestra página.</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(158, 8, 8); color: white;">&lt;section&gt;</th>
+                        <td>Es una etiqueta que poco a poco se intenta que sustituya a &lt;div&gt;, su uso es para dividir a una página web en secciones y agrupar contenido relacionado</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(124, 4, 4); color: white;">&lt;article&gt;</th>
+                        <td>Es una etiqueta que se utiliza para agrupar contenido autónomo que si se separa de otyro contenido, sigue teniendo coherencia, normalmente se compone de un encabezado y contenido</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(88, 1, 1); color: white;">&lt;footer&gt;</th>
+                        <td>Es una etiqueta que normalmente se encuentra hasta el final de una página y funciona como cierre del sitio web, a menudo contiene datos de contacto, derechos de autor u otra información complementaria.</td>
+                    </tr>
+                    <tr>
+                        <th style="background-color: rgb(41, 0, 0); color: antiquewhite;">&lt;aside&gt;</th>
+                        <td>Esta etiqueta representa una sección de la página web cuyo contenido no está relacionado con el contenido principal del documento, como: barras laterales, publicidad. enlaces a otros artículos relacionados, etc.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section>
+            <h2>Elementos principales de HTML</h2>
+            <article>
+                <h3>Elemento &lt;a&gt;</h3>
+                <p>Este elemento contiene enlaces para navegar a otras páginas:</p>
+                <ul>
+                    <li>Externos</li>
+                    <li>Internos</li>
+                    <li>Ancla/De anclaje</li>
+                </ul>
+                <p>Algunos valores especiales que tiene en su atributo href son:</p>
+                <dl>
+                    <dt>href="https://wa.me/5542649521"</dt>
+                    <dd>Este valor envia un mensaje de WhatsApp a un número específicado.</dd>
+                    <dt>href="mailto:example@gmail.com"</dt>
+                    <dd>Este valor envía un correo a un mail específico.</dd>
+                </dl>
+            </article>
+            <article>
+                <h3>Elemento  &lt;form&gt; </h3>
+                <p>
+                    Es la forma en que los usuarios de un sitio web pueden comunicarse con el, 
+                    mediante el formulario se reciben, procesan y envián datos de los usuarios para 
+                    el fin u objetivo del sitio web
+                </p>
+                <p>Por ejemplo este es un formulario típico de inicio de sesion:</p>
+                <form action="procesar.py" method="post">
+                    <label for="username">Nombre de usuario:</label>
+                    <input type="text" name="username" id="username" required>
+                    <br>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required>
+                    <br>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+                <section>
+                    <p>Contactanos:</p>
+                    <ul>
+                        <li><a href="mailto:example@gmail.com">Email</a></li>
+                        <li><a href="https://wa.me/5579972057pp</a></li>
+                        <li><a href="https://faceboook.com">Facebook</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Esta página esta licenciada bajo:</p>
+                    <a href="https://127.0.0.1/tarea7/index.html">Resumen HTML</a> © 2026 by <a href="https://github.com">EPP</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+                </section>
+                
+    </footer>
+</body>
+</html>
