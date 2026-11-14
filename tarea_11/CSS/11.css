@@ -1,0 +1,103 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#encabezado{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    /*El relleno o padding: 
+    - Espacio entre el contenido del elemento y su borde.
+    - Se aplican los valores en sentido horario: top, right, bottom, left.
+    1valor:t,r,g,l 2valores:tb,rl 3valores:t,rl,b
+    */
+    padding: 15px 15px 50px 50px;
+    /*Margen es el espacio que hay entre un elemento HTML
+    y el resto de los elementos Html a su alrededor*/
+    margin: 15px 5px;
+    /*border: 3px solid rgb(147, 62, 212)
+    es lo mismo que lo de arriba, ahi está abreviado
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(147, 62, 212);
+    */
+    border: 15px ridge rgb(0, 255, 200);
+    border-top-style: double;
+    border-left-color: crimson;
+    border-right-color: rgb(31, 150, 248)
+    border-bottom-width: 15px;
+    border-radius: 25%;
+    /*Box shadow se puede utilizar para crear efectos de sombra alrededor del borde */
+    box-shadow: -5px -5px 5px 5px rgb(31, 150, 248);
+}
+
+#encabezado h1{
+    text-decoration: underline; 
+}
+
+.introduccion{
+    color: greenyellow;
+    border: 2px solid gold;
+    background-color: black;
+    padding: 5px;
+}
+
+.introduccion p{
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 2px dotted gold;
+    box-sizing: border-box;
+}
+
+.introduccion span{
+    width: 300px;
+    height: 200px;
+    border: 2px dotted rgb(255, 0, 149);
+    padding: 10px;
+    margin: 50px;
+}
+
+.texto-fuente{
+    background-color: black;
+    color: white;
+}
+ 
+.propiedades-texto h2{
+    border: 5px solid blue;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline; 
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    text-shadow: 2px 2px 2px blue;
+    font-family: NOMBREFUENTEEXTERNA;
+}
+
+.propiedades-texto p{
+    padding: 10px;
+    text-align: justify;
+    line-height: normal;
+    letter-spacing: .5px;
+    /* word-spacing: 5px; */
+}
+
+.propiedades-fuentes h2{
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 5px 2px 2px purple;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.propiedades-fuentes p{
+    padding: 10px;
+    text-align: justify;
+    line-height: normal;
+    letter-spacing: .5px;
+    /* word-spacing: 5px; */
+    /* text-shadow: 2px 2px 2px red; */
+    font-weight: 500;
+    font-style: oblique;
+}
