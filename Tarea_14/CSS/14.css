@@ -1,0 +1,138 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black);
+    color: white;
+}
+.logo-perro{
+    border: 0.2rem solid rgb(139, 27, 225);
+    width: 20%;
+    border-radius: 45%;
+    height: 30rem;
+}
+.logo-perro img{
+    width: 100%;
+    border-radius: 45%;
+}
+#encabezado{
+    border: 0.2rem solid rebeccapurple;
+    position: sticky;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+#encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem rebeccapurple;
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+}
+#navegacion ul{
+    list-style-type:none;
+    padding-left: 0;
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+}
+#navegacion ul li{
+    display: inline-block;
+}
+.elementos-posicionados{
+    border: 0.2rem solid blue;
+    padding: 1rem;
+    position: relative;
+    height:200rem;
+    /* margin-top: 30rem; */
+}
+.rabbids{
+    border: 0.2rem solid silver;
+    width: 40rem;
+    height: 30rem;
+    margin: 1rem;
+    position: absolute;
+    /* z-index: 3; */
+    /* left: 5rem; */
+    top: 0;
+}
+.rabbids img{
+    width: 100%;
+    height: 100%;
+}
+.chichonas{
+    border: 0.2rem solid silver;
+    width: 40rem;
+    height: 30rem;
+    margin: 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+}
+.chichonas img{
+    width: 100%;
+    height: 100%;
+}
+.elsa{
+    border: 0.2rem solid silver;
+    width: 30rem;
+    height: 55rem;
+    margin: 1rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+.elsa img{
+    width: 100%;
+    height: 100%;
+}
+.paolita-suarez{
+    border: 0.2rem solid silver;
+    width: 40rem;
+    height: 30rem;
+    margin: 1rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+.paolita-suarez img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Comsultas de medios o medias querys
+sirve para definir los estilos para elementos html según el tamaño de la pantalla de nuestro dispositivo,
+gracias esto se proporciona una herramienta que nos sirve para la creación de páginas web responsivas o 
+adaptables, si se defina varias consultas de medios, se deben poner en forma descendente según
+la medida del dispositivo.
+Móviles(<480px), Tablets(480px-950px), PC(960px-1280px) */
+@media screen and (max-width:1250px) {
+    #encabezado h1{
+        left: 28%;
+        font-size: 3rem;
+    } 
+    .logo-perro{
+        border: 0.2rem solid rgb(139, 27, 225);
+        width: 20%;
+        border-radius: 45%;
+        height: 27rem;
+    }
+    
+}
+@media screen and (max-width:950px) {
+    #encabezado h1{
+        left: 25%;
+        font-size: 2.5rem;
+    } 
+    .logo-perro{
+        border: 0.2rem solid rgb(139, 27, 225);
+        width: 20%;
+        border-radius: 45%;
+        height: 22rem;
+    }
+    
+}
